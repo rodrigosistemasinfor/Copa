@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  copaapp.presentation.ui:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - SERVICE_DATA_EQUIPES=https://raw.githubusercontent.com/delsonvictor/testetecnico/master/equipes.json
+    ports:
+      - "5080:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

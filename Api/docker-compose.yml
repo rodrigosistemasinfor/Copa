@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  copaapp.presentation.ui:
+    image: ${DOCKER_REGISTRY-}copaapppresentationui
+    build:
+      context: .
+      dockerfile: Source/Presentation/CopaApp.Presentation.UI/Dockerfile

@@ -1,0 +1,29 @@
+<div class="row mb-2">
+    <div class="col-12 text-center">
+        <div class="h4 mb-1 mt-3 text-info">COPA</div>
+        <div class="h2 mb-1 text-info">Resultado Final</div>
+        <hr class="mb-2"/>
+        <p class="text-center text-info">
+            Veja o resultado final da Copa de forma simples e rápida
+        </p>
+    </div>
+</div>
+<div class="row mb-2">
+  <div class="col-12 text-right">
+    <a [routerLink]="['/home']" 
+    class="btn btn-primary">
+        Voltar (Nova Copa)
+    </a>
+  </div>
+</div>
+<div class="row" *ngIf="listaGanhadoras.length">
+  <div *ngFor="let item of listaGanhadoras; index as i"
+    class="col-12 mb-2">
+    <div class="row m-1 border border-info rounded">
+      <div class="col-12 m-3">
+          <span class="h4 mr-3 border-right border-info">{{i + 1}} ° &nbsp;</span>
+          <span class="h4 ml-2">{{item.Nome}}</span>
+      </div>
+    </div>
+  </div>
+</div>

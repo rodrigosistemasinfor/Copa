@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Application\CopaApp.Application.Service\CopaApp.Application.Service.csproj" />
+    <ProjectReference Include="..\..\..\Domain\CopaApp.Domain\CopaApp.Domain.csproj" />
+    <ProjectReference Include="..\..\Data\CopaApp.Infra.Data\CopaApp.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
